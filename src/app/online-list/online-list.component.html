@@ -1,3 +1,5 @@
 <ul *ngFor="let streamer of streamersArray" class="list-group">
-  <li *ngIf="streamer.status == 'Online'" class="list-group-item">{{streamer.name}}<img src="" style="float:right;"> <span style="float:right;">{{streamer.status}}</span></li>
+  <li *ngIf="streamer.status == 'Online'" class="list-group-item">{{streamer.name}}
+   <img [src]="'http://www.clker.com/cliparts/r/M/L/o/R/i/green-dot.svg.med.png'" style="float:right; width: 16px; height:16px; margin:1% 1% 2% 5%;">
+    <span style="float:right;">{{streamer.status}}</span></li>
 </ul>

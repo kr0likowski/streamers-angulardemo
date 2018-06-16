@@ -1,3 +1,6 @@
 <ul *ngFor="let streamer of streamersArray" class="list-group">
-  <li class="list-group-item">{{streamer.name}}<img src="" style="float:right;"> <span style="float:right;">{{streamer.status}}</span></li>
+ <a [href]="streamer.url"> <li class="list-group-item">{{streamer.name}}
+    <img *ngIf="streamer.status == 'Online'"[src]="'http://www.clker.com/cliparts/r/M/L/o/R/i/green-dot.svg.med.png'" style="float:right; width: 16px; height:16px; margin:1% 1% 2% 5%;">
+    <img *ngIf="streamer.status == 'Offline'" [src]="'https://vignette.wikia.nocookie.net/unanything/images/7/73/Red_Dot.png/revision/latest?cb=20120925180546'" style="float:right; width: 16px; height:16px; margin:1% 1% 2% 5%;">
+    <span style="float:right;">{{streamer.status}}</span></li></a>
 </ul>
