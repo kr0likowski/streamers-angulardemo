@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  streamers = [{status: 'Online', name: 'Esl_csgo_pl', url: 'http://www.twitch.tv/esl_csgo_pl'},
+    {status: 'Online', name: 'LCK1', url: 'http://www.twitch.tv/lck1'},
+    {status: 'Offline', name: 'TimTheTatman', url: 'http://www.twitch.tv/timthetatman'},
+    {status: 'Offline', name: 'gamertv_pl', url: 'http://www.twitch.tv/gamertv_pl'}];
   currentComponent = 1;
   selectedTab: string;
   navbarClick(event) {

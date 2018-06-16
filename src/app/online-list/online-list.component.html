@@ -1,3 +1,3 @@
-<p>
-  online-list works!
-</p>
+<ul *ngFor="let streamer of streamersArray" class="list-group">
+  <li *ngIf="streamer.status == 'Online'" class="list-group-item">{{streamer.name}}<img src="" style="float:right;"> <span style="float:right;">{{streamer.status}}</span></li>
+</ul>

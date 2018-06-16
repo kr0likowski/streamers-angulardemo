@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-online-list',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./online-list.component.css']
 })
 export class OnlineListComponent implements OnInit {
-
+  @Input() streamersArray: [{}];
   constructor() { }
 
   ngOnInit() {

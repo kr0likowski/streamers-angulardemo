@@ -24,9 +24,9 @@
 </nav>
 <div class="container">
   <div class="col-xl-12" style="margin-top: 5%">
-    <app-all-list *ngIf="currentComponent == 1"></app-all-list>
-    <app-offline-list *ngIf="currentComponent == 2"></app-offline-list>
-    <app-online-list *ngIf="currentComponent == 3"></app-online-list>
+    <app-all-list *ngIf="currentComponent == 1" [streamersArray]="streamers"></app-all-list>
+    <app-offline-list *ngIf="currentComponent == 2" [streamersArray]="streamers"></app-offline-list>
+    <app-online-list *ngIf="currentComponent == 3"[streamersArray]="streamers"></app-online-list>
   </div>
 </div>
 

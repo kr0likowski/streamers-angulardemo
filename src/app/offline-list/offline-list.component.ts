@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-offline-list',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./offline-list.component.css']
 })
 export class OfflineListComponent implements OnInit {
-
+  @Input() streamersArray: [{}];
   constructor() { }
 
   ngOnInit() {
