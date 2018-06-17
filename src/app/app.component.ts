@@ -12,8 +12,8 @@ export class AppComponent {
     {status: 'Offline', name: 'gamertv_pl', url: 'http://www.twitch.tv/gamertv_pl'}];
   currentComponent = 1;
   selectedTab: string;
-  navbarClick(event) {
-    switch (event.target.textContent) {
+  navbarClick(cardName: string) {
+    switch (cardName) {
       case 'Online':
         console.log('Online Works!');
         this.currentComponent = 3;
@@ -22,7 +22,7 @@ export class AppComponent {
         console.log('Offline Works!');
         this.currentComponent = 2;
         break;
-      case 'All Streamers(current)':
+      case 'All Streamers':
         console.log('All Works!');
         this.currentComponent = 1;
         break;
